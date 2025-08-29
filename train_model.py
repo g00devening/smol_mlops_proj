@@ -57,7 +57,7 @@ if __name__ == "__main__":
     mlflow.set_experiment("Iris_Classification")
 
     # Модель 1: Логистическая регрессия
-    lr_params = {"solver": "lbfgs", "max_iter": 1000, "multinomial": "auto", "random_state": 42}
+    lr_params = {"solver": "lbfgs", "max_iter": 1000, "multi_class": "auto", "random_state": 42}
     lr_model = LogisticRegression()
     train_and_log_model(lr_model, "Logistic Regression", X_train, y_train, X_test, y_test, lr_params)
 
