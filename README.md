@@ -16,7 +16,7 @@
 2. Random Forest Classifier (с двумя разными наборами гиперпараметров)
 
 ## Как запустить
-1. Клонируйте репозиторий: `git clone <repo-url>`
+1. Клонируйте репозиторий: `git clone https://github.com/g00devening/smol_mlops_proj.git`
 2. Установите зависимости: `pip install -r requirements.txt`
 3. Запустите пайплайн: `dvc repro`
 4. Для просмотра результатов экспериментов: `mlflow ui`
