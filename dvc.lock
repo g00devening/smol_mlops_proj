@@ -1,0 +1,33 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python train_model.py
+    deps:
+    - path: data/
+      hash: md5
+      md5: 1bd9762ab97c7fd33b115efa4f0990e9.dir
+      size: 3158
+      nfiles: 4
+    - path: train_model.py
+      hash: md5
+      md5: dd5b93c2872966823c86fa333369ebc2
+      size: 3237
+    outs:
+    - path: mlruns/
+      hash: md5
+      md5: fb6fab5ce580d4aba21972da673360d8.dir
+      size: 278829
+      nfiles: 75
+  prepare:
+    cmd: python data_loader.py
+    deps:
+    - path: data_loader.py
+      hash: md5
+      md5: 21c1aff7505ff18de231079d0c19f322
+      size: 1633
+    outs:
+    - path: data/
+      hash: md5
+      md5: 1bd9762ab97c7fd33b115efa4f0990e9.dir
+      size: 3158
+      nfiles: 4

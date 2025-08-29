@@ -1,0 +1,5 @@
+scikit-learn==1.6.1
+pandas==2.2.3
+mlflow==3.3.2
+dvc==3.62.0
+numpy==1.26.4
